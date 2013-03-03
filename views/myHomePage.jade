@@ -1,0 +1,20 @@
+extends layout
+block body
+  div.container-fluid(ng-controller='')
+    div.row-fluid
+      div.span3
+        div."well sidebar-nav"
+          ul."nav nav-list"
+            li.nav-header
+              Side Bar
+            li
+              a(href="#") My Big Date
+      div.span9
+        div
+          h1 我的心愿单
+          form(ng-submit='addWishItem')
+            input(placeholder='增加你的心愿吧', ng-model='', autofocus) 
+        ul
+          li(ng-repeat='wish in wilshList')
+            form(ng-submit='doneEditing(wishItem)')
+              input(ng-model='')
