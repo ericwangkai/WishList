@@ -15,7 +15,7 @@ app.configure(function() {
   app.use(require('connect-assets')());
   app.use(express.static(path.join(__dirname, 'public')));
   app.use(function(req, res, next) {
-    if(req.url.match(/^\/test\//) != null) {
+    if(req.url.match(/^\/test\//) !== null) {
       res.sendfile(path.join(__dirname, req.url));
     } else {
       next();
