@@ -4,9 +4,9 @@ html(lang='en', ng-app="WishLists")
     meta(charset='utf8')
     base(href='/')
     title Welcome To Wish List
-	link(rel='stylesheet', href='/css/bootstrap.min.css')
-	script(src='/js/lib/angular/angular.min.js')
-	script(src='/js/lib/bootstrap.min.js')
-	script(src='/js/lib/jquery.js')
+    !=css('bootstrap.min')
+    !=js('lib/angular/angular.min')
+    !=js('lib/bootstrap.min')
+    !=js('lib/jquery')
   body
     block body
