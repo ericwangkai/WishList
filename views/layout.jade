@@ -1,12 +1,15 @@
 doctype 5
-html(lang='en', ng-app="WishLists")
+html(lang='en', ng-app='wishList')
   head
     meta(charset='utf8')
     base(href='/')
     title Welcome To Wish List
     !=css('bootstrap.min')
     !=js('lib/angular/angular.min')
-    !=js('lib/bootstrap.min')
     !=js('lib/jquery')
+    !=js('lib/bootstrap.min')
+    !=js('app')
+    !=js('controllers')
+ 
   body
     block body

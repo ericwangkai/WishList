@@ -1,7 +1,7 @@
 'use strict';
 
 /* Controllers */
-
+/*
 function AppCtrl($scope, $http) {
   $http({method: 'GET', url: '/api/name'}).
   success(function(data, status, headers, config) {
@@ -11,11 +11,23 @@ function AppCtrl($scope, $http) {
     $scope.name = 'Error!'
   });
 }
-
-function MyCtrl1() {}
-MyCtrl1.$inject = [];
-
-
-function MyCtrl2() {
+*/
+function WishListController($scope) {
+    alert("Hello");
+    $scope.wishList=[
+        {"id":1, "wishDesc":"My First Wish"},
+        {"id":2, "wishDesc":"My second Wish"},
+        {"id":3, "wishDesc":"My Third Wish"},
+        {"id":4, "wishDesc":"My Fourth Wish"}    
+    ];    
+    
+    $scope.addWishItem = function(){};
+    
+    
+    
+    
 }
-MyCtrl2.$inject = [];
+
+
+
+

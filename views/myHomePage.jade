@@ -1,10 +1,10 @@
 extends layout
 block body
-  div.container-fluid(ng-controller='')
+  div.container-fluid
     div.row-fluid
       div.span3
         div.sidebar-nav
-          ul.nav nav-list
+          ul.nav
             li.nav-header
               Side Bar
             li
@@ -13,8 +13,7 @@ block body
         div
           h1 我的心愿单
           form(ng-submit='addWishItem')
-            input(placeholder='增加你的心愿吧', ng-model='', autofocus) 
+            input(placeholder='增加你的心愿吧', ng-model='wish.wishDesc', autofocus) 
         ul
-          li(ng-repeat='wish in wilshList')
-            form(ng-submit='doneEditing(wishItem)')
-              input(ng-model='')
+          li(ng-repeat='wish in wishList')
+            {{wish.wishDesc}}
